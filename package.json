@@ -1,0 +1,26 @@
+{
+  "name": "dataingestor",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "mocha": "^10.4.0",
+    "mongoose": "^8.4.1",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "chai": "^5.1.1",
+    "eslint": "^9.5.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.1.3",
+    "nodemon": "^3.1.3",
+    "prettier": "^3.3.2"
+  }
+}
