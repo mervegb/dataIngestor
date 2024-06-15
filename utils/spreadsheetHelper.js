@@ -1,10 +1,8 @@
 import xlsx from "xlsx";
 
-const readSpreadsheet = (filePath) => {
-  const workbook = xlsx.readFile(filePath);
+export const readSpreadsheet = (buffer) => {
+  const workbook = xlsx.read(buffer, { type: "buffer" });
   const sheetName = workbook.SheetNames[0];
   const worksheet = workbook.Sheets[sheetName];
-  return xlsx.utils.sheet_to_json(worksheet, { header: 1 });
+  return xlsx.utils.sheet_to_json(worksheet, { header: "A" });
 };
-
-export default readSpreadsheet;
