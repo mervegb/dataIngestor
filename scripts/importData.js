@@ -43,7 +43,7 @@ export const importTracks = async (buffer) => {
         });
         await newTrack.save();
       } catch (error) {
-        errors.push({ line: index + 3, error: error.message });
+        errors.push({ line: index, error: error.message });
       }
     })
   );
